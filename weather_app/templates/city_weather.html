@@ -1,0 +1,13 @@
+{% if weather_data1 %}
+    <h1>{{ weather_data1.city }}</h1>
+    <h2>{{ weather_data1.temperature }}ºC</h2>
+    <p>{{ weather_data1.description }}</p>
+    <img src="http://openweathermap.org/img/w/{{ weather_data1.icon }}.png" alt="{{ weather_data1.description }}">
+{% endif %}
+
+{% if weather_data2 %}
+    <h1>{{ weather_data2.city }}</h1>
+    <h2>{{ weather_data2.temperature }}ºC</h2>
+    <p>{{ weather_data2.description }}</p>
+    <img src="http://openweathermap.org/img/w/{{ weather_data2.icon }}.png" alt="{{ weather_data2.description }}">
+{% endif %}
